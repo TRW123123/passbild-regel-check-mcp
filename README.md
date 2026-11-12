@@ -10,6 +10,8 @@ Remote-MCP-Server, der für Deutschland beantwortet: Darf ich mein Foto für Per
 
 ## Status
 
+**Öffentliche Preview (kostenlos, Netlify Function, gleicher Code):** `https://passbild-regel-check-mcp.netlify.app/mcp` – am 12.11.2026 per curl geprüft (health, initialize, tools/list, tools/call positiv und negativ). Adapter: `netlify/functions/mcp.ts`.
+
 Version 0.1.0, gebaut und getestet am 12.11.2026, Regeln Stand 12.11.2026. Nur Deutschland (`land`: `DE`); andere Länder werden mit einer klaren Fehlermeldung abgelehnt. Lokal mit `wrangler dev` geprüft. **Noch kein Production-Deploy**; die URL in `server.json` (`https://passbild-mcp.profilfoto-ki.de/mcp`) ist ein Vorschlag. Der bestehende Server auf mcp.profilfoto-ki.de bleibt unverändert.
 
 ## Wichtig: kein amtliches Passbild
